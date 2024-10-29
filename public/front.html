@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+ 
+<!-- wwFront:start -->
+<html class="" lang="<%= htmlWebpackPlugin.options.lang %>">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=0" />
+        <title><%= htmlWebpackPlugin.options.title %></title>
+
+        <link rel="icon" type="image/x-icon" href="favicon.ico?_wwcv=<%= htmlWebpackPlugin.options.cacheVersion %>" />
+
+        <link rel="manifest" href="manifest.json?_wwcv=164" />
+        <meta name="theme-color" content="" />
+        <link rel="apple-touch-icon" sizes="48x48" href="public/images/48-weweb.png?_wwcv=164">
+<link rel="apple-touch-icon" sizes="72x72" href="public/images/72-weweb.png?_wwcv=164">
+<link rel="apple-touch-icon" sizes="96x96" href="public/images/96-weweb.png?_wwcv=164">
+<link rel="apple-touch-icon" sizes="128x128" href="public/images/128-weweb.png?_wwcv=164">
+<link rel="apple-touch-icon" sizes="144x144" href="public/images/144-weweb.png?_wwcv=164">
+<link rel="apple-touch-icon" sizes="152x152" href="public/images/152-weweb.png?_wwcv=164">
+<link rel="apple-touch-icon" sizes="192x192" href="public/images/192-weweb.png?_wwcv=164">
+<link rel="apple-touch-icon" sizes="256x256" href="public/images/256-weweb.png?_wwcv=164">
+<link rel="apple-touch-icon" sizes="384x384" href="public/images/384-weweb.png?_wwcv=164">
+<link rel="apple-touch-icon" sizes="512x512" href="public/images/512-weweb.png?_wwcv=164">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <style>
+:root {
+--e9d5725b-9561-492e-9de7-61a25dd9e012: #FF6384;
+--2b86830c-b33d-4040-abf6-3a2fc225d528: #FF9F40;
+--a64520bb-4b87-489e-bf4f-74cae32a38c2: #000000ad;
+--fc64c672-fa22-4961-99c9-df3d78c1b5a5: #000000;
+--a26f056a-e19f-4711-800d-5d5356deaaa4: #FFFFFF;
+--473c3ed1-9c9e-42cc-8f5a-5056d7b5cf6b: #d1d5db;
+--b5d38025-e38c-4476-a6b8-fbe1cfce7871: #000000;
+--5771d55a-cdf7-4339-b77f-741ae8120631: #000000;
+--18f67748-1945-4dc3-989f-6b5db76ecd59: #000000;
+--2408500c-b5d9-45a2-ab67-fe588bec3eb5: italic 600 20px/40px 'Inter', sans-serif;
+--9e1e5636-1b33-4ee5-bfbd-227adb150757: #FFFFFF;
+--6dd59229-7591-4379-812e-18908eb31176: #000000;}
+.ww-app-theme-dark {
+--9e1e5636-1b33-4ee5-bfbd-227adb150757: #000000;
+--6dd59229-7591-4379-812e-18908eb31176: #FFFFFF;}
+</style>
+        <link href="https://cdn.weweb.app/public/libs/weweb-icons/css/weweb-icons.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link href="https://cdn.weweb.app/public/libs/font-awesome/5.6.3/css/fontawesome.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link href="https://cdn.weweb.app/public/libs/font-awesome/5.6.3/css/fontawesome.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link href="https://cdn.weweb.app/public/libs/font-awesome/5.6.3/css/fontawesome.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link href="https://cdn.weweb.io/public/icons/heroicons/1.0.0/style.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <%= htmlWebpackPlugin.options.scripts?.head %> <% for (let link of htmlWebpackPlugin.options?.alternateLinks ||
+        []) { %>
+        <link rel="<%= link.rel %>" hreflang="<%= link.hreflang %>" href="<%= link.href %>" />
+        <% } %>
+    </head>
+    <body style="margin: 0; font-family: var(--ww-default-font-family, unset)">
+        <noscript>
+            <strong>
+                We're sorry but this website doesn't work properly without JavaScript enabled. Please enable it to
+                continue.
+            </strong>
+        </noscript>
+        <div id="app"></div>
+        <!-- built files will be auto injected -->
+        <%= htmlWebpackPlugin.options.scripts?.body %>
+    </body>
+</html>
+<!-- wwFront:end -->

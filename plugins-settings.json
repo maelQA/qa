@@ -1,0 +1,176 @@
+{
+    "ee24f5ac-e15e-4ddd-baa4-0b4baedf90c9": {
+        "id": "4496024c-16f1-4615-9d15-a4fa76375437",
+        "name": "CSV",
+        "designId": "9662a424-3623-4fd3-a930-94f5b09a6599",
+        "pluginId": "ee24f5ac-e15e-4ddd-baa4-0b4baedf90c9",
+        "publicData": {}
+    },
+    "f5856798-485d-47be-b433-d43d771c64e1": {
+        "id": "576eef75-1d3c-4920-8835-4c70c3b34926",
+        "name": "Xano Auth",
+        "designId": "9662a424-3623-4fd3-a930-94f5b09a6599",
+        "pluginId": "f5856798-485d-47be-b433-d43d771c64e1",
+        "publicData": {
+            "roles": [
+                {
+                    "id": "89f0707f-3584-4b6a-9c8c-b13beb7b8644",
+                    "name": "client",
+                    "createdAt": "2023-04-13T12:07:07.408Z"
+                },
+                {
+                    "id": "ceba553a-3b9b-4123-b79b-a8e743297d57",
+                    "name": "admin",
+                    "createdAt": "2023-04-13T12:07:10.548Z"
+                },
+                {
+                    "id": "b3639475-4432-4de9-a6b2-fa00bbcf29e3",
+                    "name": "super admin",
+                    "createdAt": "2023-04-13T12:07:25.207Z"
+                }
+            ],
+            "domain": "x8ki-letl-twmt.n7.xano.io",
+            "roleKey": "role",
+            "roleType": "string",
+            "customDomain": "",
+            "getMeEndpoint": "https://x8ki-letl-twmt.n7.xano.io/api:LaHbMwD1/auth/me",
+            "loginEndpoint": "https://x8ki-letl-twmt.n7.xano.io/api:LaHbMwD1/auth/login",
+            "signupEndpoint": "https://x8ki-letl-twmt.n7.xano.io/api:LaHbMwD1/auth/signup",
+            "socialProviders": {
+                "google-oauth": {
+                    "id": 85534,
+                    "api": "https://x8ki-letl-twmt.n7.xano.io/api:PSqKFTkk",
+                    "name": "google-oauth"
+                },
+                "linkedin-oauth": {
+                    "id": 86141,
+                    "api": "https://x8ki-letl-twmt.n7.xano.io/api:Q8_2R84A",
+                    "name": "linkedin-oauth"
+                }
+            },
+            "afterForbiddenPageId": "08fb841b-57f0-43ca-adc5-2c7f6566176d",
+            "afterNotSignInPageId": "08fb841b-57f0-43ca-adc5-2c7f6566176d"
+        }
+    },
+    "2bd1c688-31c5-443e-ae25-59aa5b6431fb": {
+        "id": "4d6b2737-988b-45cb-95b9-6e8b78352e8d",
+        "name": "REST API",
+        "designId": "9662a424-3623-4fd3-a930-94f5b09a6599",
+        "pluginId": "2bd1c688-31c5-443e-ae25-59aa5b6431fb",
+        "publicData": {}
+    },
+    "832d6f7a-42c3-43f1-a3ce-9a678272f811": {
+        "id": "7ad72ae2-4378-4e25-8e39-ceb70ab1551d",
+        "name": "Date",
+        "designId": "9662a424-3623-4fd3-a930-94f5b09a6599",
+        "pluginId": "832d6f7a-42c3-43f1-a3ce-9a678272f811",
+        "publicData": {}
+    },
+    "8bc1b5c9-29e4-4269-becb-a2e1a8de9127": {
+        "id": "6890a697-f288-4f9e-b799-12a65ef6f949",
+        "name": "WeWeb Email",
+        "designId": "9662a424-3623-4fd3-a930-94f5b09a6599",
+        "pluginId": "8bc1b5c9-29e4-4269-becb-a2e1a8de9127",
+        "publicData": {}
+    },
+    "75b9e021-a5fe-4ae9-8c6a-f4b3e65f2a24": {
+        "id": "14e7c4ff-a6cb-4d63-8e29-9f9b21690719",
+        "name": "Vimeo",
+        "designId": "9662a424-3623-4fd3-a930-94f5b09a6599",
+        "pluginId": "75b9e021-a5fe-4ae9-8c6a-f4b3e65f2a24",
+        "publicData": {}
+    },
+    "2adce8d5-2056-479d-a21a-068f55a8077f": {
+        "id": "5d0d2f4a-f683-4ea2-b34c-c8ae111b0244",
+        "name": "Mapbox",
+        "designId": "9662a424-3623-4fd3-a930-94f5b09a6599",
+        "pluginId": "2adce8d5-2056-479d-a21a-068f55a8077f",
+        "publicData": {}
+    },
+    "615d0fde-2084-4ac2-a2a4-5eb7686446ce": {
+        "id": "f88006d5-fb4d-4d5b-84de-2c4859a6419d",
+        "name": "RSS Feed",
+        "designId": "9662a424-3623-4fd3-a930-94f5b09a6599",
+        "pluginId": "615d0fde-2084-4ac2-a2a4-5eb7686446ce",
+        "publicData": {}
+    },
+    "1c5f5c0f-5609-4031-9e57-5bb4811be7b3": {
+        "id": "d93e0cec-4160-4c24-90a1-cd4f73e40c85",
+        "name": "Youtube",
+        "designId": "9662a424-3623-4fd3-a930-94f5b09a6599",
+        "pluginId": "1c5f5c0f-5609-4031-9e57-5bb4811be7b3",
+        "publicData": {}
+    },
+    "9c40819b-4a8f-468f-9ba5-4b9699f3361f": {
+        "id": "69b7ea0c-dedc-4ea9-a877-4d2518b1edec",
+        "name": "Charts",
+        "designId": "9662a424-3623-4fd3-a930-94f5b09a6599",
+        "pluginId": "9c40819b-4a8f-468f-9ba5-4b9699f3361f",
+        "publicData": {}
+    },
+    "60610cfd-fa28-4fc1-9e72-088b5c667e81": {
+        "id": "3c946823-7623-4c0b-849c-3599b59f1b70",
+        "name": "Calendly",
+        "designId": "9662a424-3623-4fd3-a930-94f5b09a6599",
+        "pluginId": "60610cfd-fa28-4fc1-9e72-088b5c667e81",
+        "publicData": {}
+    },
+    "00d22f72-1a03-44f8-ad68-c593dc80b543": {
+        "id": "fabce3b3-aa0f-4629-8000-89df1bb6a889",
+        "name": "Stripe",
+        "designId": "9662a424-3623-4fd3-a930-94f5b09a6599",
+        "pluginId": "00d22f72-1a03-44f8-ad68-c593dc80b543",
+        "publicData": {
+            "publicApiKey": "pk_test_lcLC4FM0VBQ9u96zENBsaq0u00fQKqSWjZ",
+            "publicTestApiKey": "pk_test_lcLC4FM0VBQ9u96zENBsaq0u00fQKqSWjZ"
+        }
+    },
+    "36816525-6e0d-4217-b792-19f5d8682c46": {
+        "id": "095a6596-7e47-4ed0-9570-2f1ea97f8a26",
+        "name": "GraphQL",
+        "designId": "9662a424-3623-4fd3-a930-94f5b09a6599",
+        "pluginId": "36816525-6e0d-4217-b792-19f5d8682c46",
+        "publicData": {}
+    },
+    "cd33cf33-e29f-4e8c-ac26-b997fe507ce7": {
+        "id": "2a6e41f0-9fc8-4d6b-b0fc-cd52e5de7c23",
+        "name": "Xano",
+        "designId": "9662a424-3623-4fd3-a930-94f5b09a6599",
+        "pluginId": "cd33cf33-e29f-4e8c-ac26-b997fe507ce7",
+        "publicData": {
+            "domain": "x8ki-letl-twmt.n7.xano.io",
+            "customDomain": "",
+            "xBranchEditor": ""
+        }
+    },
+    "d66a250d-8468-469e-ad33-ee028f632398": {
+        "id": "2c8000ee-a6fa-432d-9a70-501fac3c79a3",
+        "name": "OpenAI",
+        "designId": "9662a424-3623-4fd3-a930-94f5b09a6599",
+        "pluginId": "d66a250d-8468-469e-ad33-ee028f632398",
+        "publicData": {}
+    },
+    "3a407b45-9c63-471d-b09b-15cf797e5566": {
+        "id": "e16546f5-95f4-49c1-be22-1fd345179056",
+        "name": "Sound",
+        "designId": "9662a424-3623-4fd3-a930-94f5b09a6599",
+        "pluginId": "3a407b45-9c63-471d-b09b-15cf797e5566",
+        "publicData": {}
+    },
+    "69d4a5bb-09a3-4f3d-a94e-667c21c057eb": {
+        "id": "2a031c15-37f3-4880-bc1a-5e38e65b1ded",
+        "name": "NPM",
+        "designId": "9662a424-3623-4fd3-a930-94f5b09a6599",
+        "pluginId": "69d4a5bb-09a3-4f3d-a94e-667c21c057eb",
+        "publicData": {
+            "packages": [
+                {
+                    "link": "https://lodash.com/",
+                    "name": "lodash",
+                    "version": "4.17.21",
+                    "instanceName": "_"
+                }
+            ]
+        }
+    }
+}
