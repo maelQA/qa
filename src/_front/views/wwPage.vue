@@ -48,7 +48,6 @@ export default {
         const designInfo = computed(() => store.getters['websiteData/getDesignInfo'] || {});
 
         /* wwFront:start */
-        const loadAllSections = ref(false);
         const homePage = computed(
             () => store.getters['websiteData/getPageById'](designInfo.value.homePageId) || { id: null, meta: {} }
         );
@@ -66,10 +65,8 @@ export default {
                 y: 0,
             },
             /* wwFront:start */
-            loadAllSections,
             sections: computed(() => {
                 const sections = store.getters['websiteData/getSections'];
-                if (!loadAllSections.value) return page.value.sections.map(({ uid }) => sections[uid]).slice(0, 4);
                 return page.value.sections.map(({ uid }) => sections[uid]);
             }),
             /* wwFront:end */
@@ -99,16 +96,6 @@ export default {
         },
         background() {
             this.setBackground();
-        },
-        page: {
-            immediate: true,
-            handler(newValue) {
-                if (newValue.pageLoaded) {
-                    setTimeout(() => {
-                        this.loadAllSections = true;
-                    }, 300);
-                }
-            },
         },
     },
     mounted() {
