@@ -6,22 +6,24 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=0" />
+        <% if (htmlWebpackPlugin.options.title) { %>
         <title><%= htmlWebpackPlugin.options.title %></title>
+        <% } %>
 
         <link rel="icon" type="image/x-icon" href="favicon.ico?_wwcv=<%= htmlWebpackPlugin.options.cacheVersion %>" />
 
-        <link rel="manifest" href="manifest.json?_wwcv=207" />
+        <link rel="manifest" href="manifest.json?_wwcv=214" />
         <meta name="theme-color" content="" />
-        <link rel="apple-touch-icon" sizes="48x48" href="public/images/48-weweb.png?_wwcv=207">
-<link rel="apple-touch-icon" sizes="72x72" href="public/images/72-weweb.png?_wwcv=207">
-<link rel="apple-touch-icon" sizes="96x96" href="public/images/96-weweb.png?_wwcv=207">
-<link rel="apple-touch-icon" sizes="128x128" href="public/images/128-weweb.png?_wwcv=207">
-<link rel="apple-touch-icon" sizes="144x144" href="public/images/144-weweb.png?_wwcv=207">
-<link rel="apple-touch-icon" sizes="152x152" href="public/images/152-weweb.png?_wwcv=207">
-<link rel="apple-touch-icon" sizes="192x192" href="public/images/192-weweb.png?_wwcv=207">
-<link rel="apple-touch-icon" sizes="256x256" href="public/images/256-weweb.png?_wwcv=207">
-<link rel="apple-touch-icon" sizes="384x384" href="public/images/384-weweb.png?_wwcv=207">
-<link rel="apple-touch-icon" sizes="512x512" href="public/images/512-weweb.png?_wwcv=207">
+        <link rel="apple-touch-icon" sizes="48x48" href="public/images/48-weweb.png?_wwcv=214">
+<link rel="apple-touch-icon" sizes="72x72" href="public/images/72-weweb.png?_wwcv=214">
+<link rel="apple-touch-icon" sizes="96x96" href="public/images/96-weweb.png?_wwcv=214">
+<link rel="apple-touch-icon" sizes="128x128" href="public/images/128-weweb.png?_wwcv=214">
+<link rel="apple-touch-icon" sizes="144x144" href="public/images/144-weweb.png?_wwcv=214">
+<link rel="apple-touch-icon" sizes="152x152" href="public/images/152-weweb.png?_wwcv=214">
+<link rel="apple-touch-icon" sizes="192x192" href="public/images/192-weweb.png?_wwcv=214">
+<link rel="apple-touch-icon" sizes="256x256" href="public/images/256-weweb.png?_wwcv=214">
+<link rel="apple-touch-icon" sizes="384x384" href="public/images/384-weweb.png?_wwcv=214">
+<link rel="apple-touch-icon" sizes="512x512" href="public/images/512-weweb.png?_wwcv=214">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <style>
@@ -50,6 +52,10 @@
         <%= htmlWebpackPlugin.options.scripts?.head %> <% for (let link of htmlWebpackPlugin.options?.alternateLinks ||
         []) { %>
         <link rel="<%= link.rel %>" hreflang="<%= link.hreflang %>" href="<%= link.href %>" />
+        <% } %> <% if (htmlWebpackPlugin.options.structuredData) { %>
+        <script type="application/ld+json">
+            <%= htmlWebpackPlugin.options.structuredData %>
+        </script>
         <% } %>
     </head>
     <body style="margin: 0; font-family: var(--ww-default-font-family, unset)">

@@ -100,8 +100,6 @@ function computePayload(method, data, headers, params, dataType, useRawBody) {
         case 'OPTIONS':
         case 'GET':
         case 'DELETE':
-            data = undefined;
-            break;
         default:
             break;
     }
